@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Stundenplan</title>
+</head>
+<body>
+   <h1>Mein Stundenplan</h1>
+
+   <table v-if="showTable" border="2px" width="95%">
+      <tr>
+         <th></th>
+         <th>Montag</th>
+         <th>Dienstag</th>
+         <th>Mittwoch</th>
+         <th>Donnerstag</th>
+         <th>Freitag</th>
+      </tr>
+
+      <tr>
+         <th rowspan="4">09:00</th>
+
+         <td rowspan="6">
+            <p>
+               Software Engineering<br>
+               Montag,  09:00 - 10:30 , woch <br>
+               Start :  04.10.2021 <br>
+               Ende :  10.01.2022 <br>
+               Vorlesung, Raum : D-Gebäude - D138 Engelhorn <br>
+               Durchf. Lehrperson: Jung <br>
+            </p>
+         </td>
+
+         <td rowspan="6">
+            <p>
+               Vorlesung Diskrete Mathematik<br>
+               Dienstag,  09:00 - 10:30 , woch <br>
+               Start :  05.10.2021 <br>
+               Ende :  11.01.2022
+               Vorlesung, Raum : B-Gebäude - B200 <br>
+               Durchf. Lehrperson: Bozakov <br>
+            </p>
+         </td>
+
+         <td rowspan="16"></td>
+
+         <td rowspan="6">
+            <p>
+               Vorlesung Webentwickelung<br>
+               Donnerstag,  09:00 - 10:30 , woch <br>
+               Start :  07.10.2021 <br>
+               Ende :  13.01.2022 <br>
+               Vorlesung, Raum : D-Gebäude - D138 Engelhorn <br>
+               Durchf. Lehrperson: Schwarzer <br>
+            </p>
+         </td>
+
+         <td rowspan="6">
+            <p>
+               Vorlesung Betriebssysteme<br>
+               Freitag,  09:00 - 10:30 , woch <br>
+               Start :  08.10.2021 <br>
+               Ende :  14.01.2022 <br>
+               Vorlesung, Raum : D-Gebäude - D138 Engelhorn <br>
+               Durchf. Lehrperson: Wendzel <br>
+            </p>
+         </td>
+      </tr>
+
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+
+      <tr>
+         <th rowspan="4">10:00</th>
+      </tr>
+
+      <tr></tr>
+      <tr>
+         <td>Pause</td>
+         <td rowspan="4">
+            <p>
+               Übung Diskrete Mathematik<br>
+               Dienstag,  10:30 - 11:30 , woch <br>
+               Start :  12.10.2021 <br>
+               Ende :  11.01.2022 <br>
+               Vorlesung, Raum : B-Gebäude - B200 <br>
+               Durchf. Lehrperson: Bozakov   <br>
+            </p>
+         </td>
+         <td>Pause</td>
+         <td>Pause</td>
+      </tr>
+      <tr>
+         <td rowspan="6">
+            <p>
+               1. Gruppe Software Engineering<br>
+               Montag,  10:45 - 12:15 , woch <br>
+               Start :  04.10.2021 <br>
+               Ende :  10.01.2022 <br>
+               Vorlesung, Raum : N-Gebäude - N039 <br>
+               Durchf. Lehrpersonen: Jung,  Laumann <br>
+            </p>
+         </td>
+         <td rowspan="6">
+            <p>
+               1. Gruppe Webentwickelung<br>
+               Donnerstag,  10:45 - 12:15 , woch <br>
+               Start :  07.10.2021 <br>
+               Ende :  13.01.2022 <br>
+               Vorlesung, Raum : N-Gebäude - N039 <br>
+               Durchf. Lehrperson: Schwarzer <br>
+            </p>
+         </td>
+         <td rowspan="6">
+            <p>
+               1. Gruppe Betriebssysteme<br>
+               Freitag,  10:45 - 12:15 , woch <br>
+               Start :  08.10.2021 <br>
+               Ende :  14.01.2022 <br>
+               Vorlesung, Raum : N-Gebäude - N039 <br>
+               Durchf. Lehrpersonen: Hartmann,  Wendzel <br>
+            </p>
+         </td>
+
+      </tr>
+
+      <tr>
+         <th rowspan="4">11:00</th>
+      </tr>
+
+      <tr></tr>
+      <tr>
+         <td rowspan="27"></td>
+      </tr>
+      <tr></tr>
+
+      <tr>
+         <th rowspan="4">12:00</th>
+      </tr>
+
+      <tr>
+         <td rowspan="24"></td>
+         <td rowspan="2">Pause</td>
+         <td rowspan="1">Pause</td>
+      </tr>
+
+      <tr>
+         <td rowspan="6">
+            <p>
+               Vorlesung/Übung Kryptographie<br>
+               Freitag,  12:30 - 14:00 , woch <br>
+               Start :  15.10.2021 <br>
+               Ende :  14.01.2022 <br>
+               Vorlesung, Raum : O-Gebäude - O103 <br>
+               Durchf. Lehrperson: Neeb   <br>
+            </p>
+         </td>
+      </tr>
+
+      <tr>
+         <td rowspan="10">
+            <p>
+               Vorlesung/Übung Kryptographie<br>
+               Donnerstag,  12:45 - 15:15 , woch <br>
+               Start :  14.10.2021 <br>
+               Ende :  13.01.2022 <br>
+               Vorlesung, Raum : A-Gebäude - A126 EWR <br>
+               Durchf. Lehrperson: Wendzel <br>
+            </p>
+         </td>
+      </tr>
+
+      <tr>
+         <th rowspan="4">13:00</th>
+         <td rowspan="13">
+            <p>
+               Vorlesung/Übung Mediendesign<br>
+               Mittwoch,  13:00 - 16:15 , woch <br>
+               Start :  06.10.2021 <br>
+               Ende :  12.01.2022 <br>
+               Vorlesung, Raum : N-Gebäude - N144 <br>
+               Durchf. Lehrperson: Grossmann  <br>
+            </p>
+         </td>
+      </tr>
+
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+
+      <tr>
+         <th rowspan="4">14:00</th>
+         <td rowspan="17" ></td>
+      </tr>
+
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+
+      <tr>
+         <th rowspan="4">15:00</th>
+      </tr>
+
+      <tr>
+         <td rowspan="12" ></td>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+
+      <tr>
+         <th rowspan="4">16:00</th>
+      </tr>
+
+      <tr>
+         <td rowspan="8" ></td>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+
+      <tr>
+         <th rowspan="4">17:00</th>
+      </tr>
+
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+
+      <tr>
+         <th>18:00</th>
+      </tr>
+
+
+   </table>
+</body>
+<script src="../js/theme.js" charset="utf-8"></script>
+<script src="../js/schedule.js" charset="utf-8"></script>
+</html>
